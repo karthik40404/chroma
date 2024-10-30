@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0); 
     overflow-x: hidden
 }
 .navbar {
@@ -159,13 +160,16 @@ h3{
     border-radius: 30px;
     padding: 20px;
 }
-
+.content2{
+    overflow-x: hidden; 
+    /* overflow-y: hidden; */
+}
 .cont2img{
     width: 200px; 
     height: auto; 
     object-fit: contain;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .img71{
@@ -223,6 +227,7 @@ h3{
     box-sizing: border-box;
   }
   .social-icons {
+    justify-content: center;
     display: flex;
     gap: 10px;
   }
@@ -266,3 +271,11 @@ h3{
     display: flex;
   }
   
+  @media (max-width: 768px) {
+    .menubar {
+        display: none; /* Hide menu bar on small screens */
+    }
+    .location-text {
+        display: none; /* Hide location text on small screens */
+    }
+}
